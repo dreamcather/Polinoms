@@ -1,0 +1,14 @@
+﻿Построение начато 02.04.2017 21:49:00.
+     1>Проект "C:\Users\Евгений\Documents\Visual Studio 2012\Projects\Проект2\Проект2.vcxproj" в узле 2 (целевые объекты Build).
+     1>ClCompile:
+         D:\С\VC\bin\CL.exe /c /I"D:\Программы\Visual Leak Detector\include" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /AI"C:\Program Files (x86)\Windows Kits\8.0\References\CommonConfiguration\Neutral" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D _UNICODE /D UNICODE /Gm- /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib MyForm.cpp
+         MyForm.cpp
+     1>c:\users\евгений\documents\visual studio 2012\projects\проект2\Polinom.h(2): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+       Link:
+         D:\С\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Евгений\Documents\Visual Studio 2012\Projects\Проект2\Debug\Проект2.exe" /INCREMENTAL /NOLOGO /LIBPATH:"D:\Программы\Visual Leak Detector\lib\Win32" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /ASSEMBLYRESOURCE:"Debug\Проект2.MyForm.resources" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Евгений\Documents\Visual Studio 2012\Projects\Проект2\Debug\Проект2.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"Main" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Евгений\Documents\Visual Studio 2012\Projects\Проект2\Debug\Проект2.lib" /MACHINE:X86 Debug\MyForm.obj
+         Проект2.vcxproj -> C:\Users\Евгений\Documents\Visual Studio 2012\Projects\Проект2\Debug\Проект2.exe
+     1>Построение проекта "C:\Users\Евгений\Documents\Visual Studio 2012\Projects\Проект2\Проект2.vcxproj" завершено (целевые объекты Build).
+
+Построение успешно завершено.
+
+Затраченное время: 00:00:03.49
