@@ -13,6 +13,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{EC2A9013-4A51-4882-836D-8F1ABA1D58F3}</ProjectGuid>
     <RootNamespace>Проект2</RootNamespace>
+    <ProjectName>Polinoms</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -44,6 +45,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>D:\Программирование\2 курс\Полином\PolinomLibrary;D:\Программирование\2 курс\Полином\SpisokLibrary;D:\Программирование\2 курс\Полином\PolinomsLibrary;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -93,14 +95,22 @@
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="Polinom.h" />
-    <ClInclude Include="Spisok.h" />
-    <ClInclude Include="Zveno.h" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MyForm.resx">
       <DependentUpon>MyForm.h</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="PolinomLibrary\PolinomLibrary.vcxproj">
+      <Project>{7787ff50-d586-4a23-9edb-786215979798}</Project>
+    </ProjectReference>
+    <ProjectReference Include="PolinomsLibrary\PolinomsLibrary.vcxproj">
+      <Project>{2a0966d4-fd5f-4349-af1c-82dc66f0587a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="SpisokLibrary\SpisokLibrary.vcxproj">
+      <Project>{61aedcdb-0c69-4a09-a572-9d3860e03644}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

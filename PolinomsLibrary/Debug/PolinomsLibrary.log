@@ -1,0 +1,13 @@
+﻿Построение начато 09.04.2017 21:00:18.
+     1>Проект "D:\Программирование\2 курс\Полином\PolinomsLibrary\PolinomsLibrary.vcxproj" в узле 3 (целевые объекты Build).
+     1>ClCompile:
+         D:\С\VC\bin\CL.exe /c /I"D:\Программы\Visual Leak Detector\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\PolinomsLibrary.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+       Lib:
+         D:\С\VC\bin\Lib.exe /OUT:"D:\Программирование\2 курс\Полином\Debug\PolinomsLibrary.lib" /LIBPATH:"D:\Программы\Visual Leak Detector\lib\Win32" /NOLOGO Debug\stdafx.obj
+         PolinomsLibrary.vcxproj -> D:\Программирование\2 курс\Полином\Debug\PolinomsLibrary.lib
+     1>Построение проекта "D:\Программирование\2 курс\Полином\PolinomsLibrary\PolinomsLibrary.vcxproj" завершено (целевые объекты Build).
+
+Построение успешно завершено.
+
+Затраченное время: 00:00:00.85

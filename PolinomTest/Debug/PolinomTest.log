@@ -1,0 +1,18 @@
+﻿Построение начато 09.04.2017 22:29:11.
+     1>Проект "D:\Программирование\2 курс\Полином\PolinomTest\PolinomTest.vcxproj" в узле 2 (целевые объекты Build).
+     1>ClCompile:
+         D:\С\VC\bin\CL.exe /c /I"D:\С\VC\UnitTest\include" /I"D:\Программирование\2 курс\Полином\PolinomLibrary" /I"D:\Программирование\2 курс\Полином\SpisokLibrary" /I"D:\Программы\Visual Leak Detector\include" /AI"D:\Программирование\2 курс\Полином\PolinomLibrary" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\PolinomTest.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /FC /errorReport:prompt PolinomTest.cpp
+         PolinomTest.cpp
+       Link:
+         D:\С\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Программирование\2 курс\Полином\Debug\PolinomTest.dll" /INCREMENTAL /NOLOGO /LIBPATH:"D:\С\VC\UnitTest\lib" /LIBPATH:"D:\Программы\Visual Leak Detector\lib\Win32" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Программирование\2 курс\Полином\Debug\PolinomTest.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Программирование\2 курс\Полином\Debug\PolinomTest.lib" /MACHINE:X86 /DLL Debug\stdafx.obj
+         Debug\PolinomTest.obj
+         "D:\Программирование\2 курс\Полином\Debug\ZvenoLibrary.lib"
+         "D:\Программирование\2 курс\Полином\Debug\PolinomsLibrary.lib"
+         "D:\Программирование\2 курс\Полином\Debug\SpisokLibrary.lib"
+            ╤ючфрхЄё  сшсышюЄхър D:\╧ЁюуЁрььшЁютрэшх\2 ъєЁё\╧юышэюь\Debug\PolinomTest.lib ш юс·хъЄ D:\╧ЁюуЁрььшЁютрэшх\2 ъєЁё\╧юышэюь\Debug\PolinomTest.exp
+         PolinomTest.vcxproj -> D:\Программирование\2 курс\Полином\Debug\PolinomTest.dll
+     1>Построение проекта "D:\Программирование\2 курс\Полином\PolinomTest\PolinomTest.vcxproj" завершено (целевые объекты Build).
+
+Построение успешно завершено.
+
+Затраченное время: 00:00:02.07

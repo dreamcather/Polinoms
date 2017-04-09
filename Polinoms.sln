@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Polinoms", "Проект2.vcxproj", "{EC2A9013-4A51-4882-836D-8F1ABA1D58F3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PolinomTest", "PolinomTest\PolinomTest.vcxproj", "{5896CEF7-869D-485C-B37E-58994B2D0767}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZvenoLibrary", "PolinomLibrary\PolinomLibrary.vcxproj", "{7787FF50-D586-4A23-9EDB-786215979798}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SpisokLibrary", "SpisokLibrary\SpisokLibrary.vcxproj", "{61AEDCDB-0C69-4A09-A572-9D3860E03644}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PolinomsLibrary", "PolinomsLibrary\PolinomsLibrary.vcxproj", "{2A0966D4-FD5F-4349-AF1C-82DC66F0587A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC2A9013-4A51-4882-836D-8F1ABA1D58F3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EC2A9013-4A51-4882-836D-8F1ABA1D58F3}.Debug|Win32.Build.0 = Debug|Win32
+		{EC2A9013-4A51-4882-836D-8F1ABA1D58F3}.Release|Win32.ActiveCfg = Release|Win32
+		{EC2A9013-4A51-4882-836D-8F1ABA1D58F3}.Release|Win32.Build.0 = Release|Win32
+		{5896CEF7-869D-485C-B37E-58994B2D0767}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5896CEF7-869D-485C-B37E-58994B2D0767}.Debug|Win32.Build.0 = Debug|Win32
+		{5896CEF7-869D-485C-B37E-58994B2D0767}.Release|Win32.ActiveCfg = Release|Win32
+		{5896CEF7-869D-485C-B37E-58994B2D0767}.Release|Win32.Build.0 = Release|Win32
+		{7787FF50-D586-4A23-9EDB-786215979798}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7787FF50-D586-4A23-9EDB-786215979798}.Debug|Win32.Build.0 = Debug|Win32
+		{7787FF50-D586-4A23-9EDB-786215979798}.Release|Win32.ActiveCfg = Release|Win32
+		{7787FF50-D586-4A23-9EDB-786215979798}.Release|Win32.Build.0 = Release|Win32
+		{61AEDCDB-0C69-4A09-A572-9D3860E03644}.Debug|Win32.ActiveCfg = Debug|Win32
+		{61AEDCDB-0C69-4A09-A572-9D3860E03644}.Debug|Win32.Build.0 = Debug|Win32
+		{61AEDCDB-0C69-4A09-A572-9D3860E03644}.Release|Win32.ActiveCfg = Release|Win32
+		{61AEDCDB-0C69-4A09-A572-9D3860E03644}.Release|Win32.Build.0 = Release|Win32
+		{2A0966D4-FD5F-4349-AF1C-82DC66F0587A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2A0966D4-FD5F-4349-AF1C-82DC66F0587A}.Debug|Win32.Build.0 = Debug|Win32
+		{2A0966D4-FD5F-4349-AF1C-82DC66F0587A}.Release|Win32.ActiveCfg = Release|Win32
+		{2A0966D4-FD5F-4349-AF1C-82DC66F0587A}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
