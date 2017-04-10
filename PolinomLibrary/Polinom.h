@@ -34,9 +34,10 @@ public:
 	}
 	CSpisok StrToPol(string str)
 	{
-		string *mas = new string[str.length() / 4 + 1];
+		string *mas = new string[str.length()];
 		CSpisok tmp;
 		int k = 0;
+		str="+"+str;
 		if(str.length()==0)
 		return tmp;
 		else

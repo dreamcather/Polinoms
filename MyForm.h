@@ -90,6 +90,7 @@ namespace Проект2 {
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(229, 20);
 			this->textBox1->TabIndex = 0;
+			this->textBox1->Visible = false;
 			// 
 			// textBox2
 			// 
@@ -97,6 +98,7 @@ namespace Проект2 {
 			this->textBox2->Name = L"textBox2";
 			this->textBox2->Size = System::Drawing::Size(229, 20);
 			this->textBox2->TabIndex = 1;
+			this->textBox2->Visible = false;
 			// 
 			// textBox3
 			// 
@@ -104,6 +106,7 @@ namespace Проект2 {
 			this->textBox3->Name = L"textBox3";
 			this->textBox3->Size = System::Drawing::Size(229, 20);
 			this->textBox3->TabIndex = 2;
+			this->textBox3->Visible = false;
 			// 
 			// numericUpDown1
 			// 
@@ -143,6 +146,7 @@ namespace Проект2 {
 			this->button2->TabIndex = 6;
 			this->button2->Text = L"Change";
 			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Click += gcnew System::EventHandler(this, &MyForm::button2_Click);
 			// 
 			// button3
 			// 
@@ -152,6 +156,7 @@ namespace Проект2 {
 			this->button3->TabIndex = 7;
 			this->button3->Text = L"ok";
 			this->button3->UseVisualStyleBackColor = true;
+			this->button3->Visible = false;
 			this->button3->Click += gcnew System::EventHandler(this, &MyForm::button3_Click);
 			// 
 			// button4
@@ -162,6 +167,7 @@ namespace Проект2 {
 			this->button4->TabIndex = 8;
 			this->button4->Text = L"ok";
 			this->button4->UseVisualStyleBackColor = true;
+			this->button4->Visible = false;
 			this->button4->Click += gcnew System::EventHandler(this, &MyForm::button4_Click);
 			// 
 			// button5
@@ -172,6 +178,7 @@ namespace Проект2 {
 			this->button5->TabIndex = 9;
 			this->button5->Text = L"+";
 			this->button5->UseVisualStyleBackColor = true;
+			this->button5->Visible = false;
 			this->button5->Click += gcnew System::EventHandler(this, &MyForm::button5_Click);
 			// 
 			// button6
@@ -182,6 +189,7 @@ namespace Проект2 {
 			this->button6->TabIndex = 10;
 			this->button6->Text = L"-";
 			this->button6->UseVisualStyleBackColor = true;
+			this->button6->Visible = false;
 			this->button6->Click += gcnew System::EventHandler(this, &MyForm::button6_Click);
 			// 
 			// button7
@@ -192,6 +200,7 @@ namespace Проект2 {
 			this->button7->TabIndex = 11;
 			this->button7->Text = L"*";
 			this->button7->UseVisualStyleBackColor = true;
+			this->button7->Visible = false;
 			this->button7->Click += gcnew System::EventHandler(this, &MyForm::button7_Click);
 			// 
 			// button8
@@ -202,6 +211,7 @@ namespace Проект2 {
 			this->button8->TabIndex = 12;
 			this->button8->Text = L"*";
 			this->button8->UseVisualStyleBackColor = true;
+			this->button8->Visible = false;
 			this->button8->Click += gcnew System::EventHandler(this, &MyForm::button8_Click);
 			// 
 			// textBox4
@@ -210,6 +220,7 @@ namespace Проект2 {
 			this->textBox4->Name = L"textBox4";
 			this->textBox4->Size = System::Drawing::Size(35, 20);
 			this->textBox4->TabIndex = 13;
+			this->textBox4->Visible = false;
 			// 
 			// MyForm
 			// 
@@ -253,18 +264,41 @@ namespace Проект2 {
 				 n=Convert::ToInt32(numericUpDown2->Value);
 				 numericUpDown1->Increment=0;
 				 numericUpDown2->Increment=0;
+				 textBox1->Visible=true;
+				 textBox2->Visible=true;
+				 button3->Visible=true;
+				 button4->Visible=true;
 			 }
 private: System::Void button3_Click(System::Object^  sender, System::EventArgs^  e) {
 			 System::String^ strs=textBox1->Text;
 			 std::string str;
 			 MarshalString(strs,str);
 			 Polinom frs(maxst,n,str);
-			 textBox1->ReadOnly=true;
-
+			 str=frs.GetString();
+			 if(str[0]=='+')
+				 str.erase(0,1);
+			 if((str.find("+0")>0)&&((str.find("+0")<str.length())))
+				 str.erase(str.length()-3,3);
+			 strs=gcnew String(str.c_str());
+			 textBox1->Text=strs;
 
 		 }
 private: System::Void button4_Click(System::Object^  sender, System::EventArgs^  e) {
-			 textBox2->ReadOnly=true;
+			 System::String^ strs=textBox2->Text;
+			 std::string str;
+			 MarshalString(strs,str);
+			 Polinom frs(maxst,n,str);
+			 str=frs.GetString();
+			 if(str[0]=='+')
+				 str.erase(0,1);
+			 strs=gcnew String(str.c_str());
+			 textBox2->Text=strs;
+			 textBox3->Visible=true;
+			 textBox4->Visible=true;
+			 button5->Visible=true;
+			 button6->Visible=true;
+			 button7->Visible=true;
+			 button8->Visible=true;
 		 }
 private: System::Void button5_Click(System::Object^  sender, System::EventArgs^  e) {
 			 System::String^ strf=textBox1->Text;
@@ -277,6 +311,8 @@ private: System::Void button5_Click(System::Object^  sender, System::EventArgs^ 
 			 Polinom sec(maxst,n,st);
 			 frs =frs+sec;
 			 string res=frs.GetString();
+			  if(res[0]=='+')
+				 res.erase(0,1);
 			 String^ str2 = gcnew String(res.c_str()); 
 			 textBox3->Text=str2;
 		 }
@@ -291,6 +327,8 @@ private: System::Void button6_Click(System::Object^  sender, System::EventArgs^ 
 			 Polinom sec(maxst,n,st);
 			 frs =sec-frs;
 			 string res=frs.GetString();
+			 if(res[0]=='+')
+				 res.erase(0,1);
 			 String^ str2 = gcnew String(res.c_str()); 
 			 textBox3->Text=str2;
 		 }
@@ -305,6 +343,8 @@ private: System::Void button7_Click(System::Object^  sender, System::EventArgs^ 
 			 Polinom sec(maxst,n,st);
 			 frs=frs*sec;
 			 string res=frs.GetString();
+			  if(res[0]=='+')
+				 res.erase(0,1);
 			 String^ str2 = gcnew String(res.c_str()); 
 			 textBox3->Text=str2;
 		 }
@@ -316,8 +356,22 @@ private: System::Void button8_Click(System::Object^  sender, System::EventArgs^ 
 			 int n=Convert::ToInt32(textBox4->Text);
 			 frs=frs*n;
 			 string res=frs.GetString();
+			  if(res[0]=='+')
+				 res.erase(0,1);
 			 String^ str2 = gcnew String(res.c_str()); 
 			 textBox3->Text=str2;
+		 }
+private: System::Void button2_Click(System::Object^  sender, System::EventArgs^  e) {
+			 textBox3->Visible=false;
+			 textBox4->Visible=false;
+			 button5->Visible=false;
+			 button6->Visible=false;
+			 button7->Visible=false;
+			 button8->Visible=false;
+			 textBox3->Visible=false;
+			 textBox3->Visible=false;
+			 numericUpDown1->Increment=1;
+			 numericUpDown2->Increment=1;
 		 }
 };
 }

@@ -1,17 +1,17 @@
-﻿Построение начато 09.04.2017 22:26:09.
-     1>Проект "D:\Программирование\2 курс\Полином\Проект2.vcxproj" в узле 2 (целевые объекты Build).
+﻿Build started 10.04.2017 15:12:31.
+     1>Project "D:\Polinom\Проект2.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         D:\С\VC\bin\CL.exe /c /I"D:\Программирование\2 курс\Полином\PolinomLibrary" /I"D:\Программирование\2 курс\Полином\SpisokLibrary" /I"D:\Программирование\2 курс\Полином\PolinomsLibrary" /I"D:\Программы\Visual Leak Detector\include" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /AI"C:\Program Files (x86)\Windows Kits\8.0\References\CommonConfiguration\Neutral" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D _UNICODE /D UNICODE /Gm- /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib MyForm.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ID:\Polinom\PolinomLibrary /ID:\Polinom\SpisokLibrary /ID:\Polinom\PolinomsLibrary /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /AI"C:\Program Files (x86)\Windows Kits\8.0\References\CommonConfiguration\Neutral" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D _UNICODE /D UNICODE /Gm- /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib MyForm.cpp
          MyForm.cpp
-     1>D:\Программирование\2 курс\Полином\PolinomLibrary\Polinom.h(2): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+     1>D:\Polinom\PolinomLibrary\Polinom.h(2): warning C4067: unexpected tokens following preprocessor directive - expected a newline
        Link:
-         D:\С\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Программирование\2 курс\Полином\Debug\Polinoms.exe" /INCREMENTAL /NOLOGO /LIBPATH:"D:\Программы\Visual Leak Detector\lib\Win32" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /ASSEMBLYRESOURCE:"Debug\Проект2.MyForm.resources" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Программирование\2 курс\Полином\Debug\Polinoms.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"Main" /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Программирование\2 курс\Полином\Debug\Polinoms.lib" /MACHINE:X86 Debug\MyForm.obj
-         "D:\Программирование\2 курс\Полином\Debug\ZvenoLibrary.lib"
-         "D:\Программирование\2 курс\Полином\Debug\PolinomsLibrary.lib"
-         "D:\Программирование\2 курс\Полином\Debug\SpisokLibrary.lib"
-         Проект2.vcxproj -> D:\Программирование\2 курс\Полином\Debug\Polinoms.exe
-     1>Построение проекта "D:\Программирование\2 курс\Полином\Проект2.vcxproj" завершено (целевые объекты Build).
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Polinom\Debug\Polinoms.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /ASSEMBLYRESOURCE:"Debug\Проект2.MyForm.resources" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Polinom\Debug\Polinoms.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"Main" /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Polinom\Debug\Polinoms.lib" /MACHINE:X86 Debug\MyForm.obj
+         D:\Polinom\Debug\ZvenoLibrary.lib
+         D:\Polinom\Debug\SpisokLibrary.lib
+         D:\Polinom\Debug\PolinomsLibrary.lib
+         Проект2.vcxproj -> D:\Polinom\Debug\Polinoms.exe
+     1>Done Building Project "D:\Polinom\Проект2.vcxproj" (Build target(s)).
 
-Построение успешно завершено.
+Build succeeded.
 
-Затраченное время: 00:00:04.66
+Time Elapsed 00:00:03.43

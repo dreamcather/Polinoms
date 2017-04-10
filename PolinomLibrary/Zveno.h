@@ -82,6 +82,10 @@ public:
 	string ZvenoToString(int maxSt,int n)
 	{
 	int* pw=new int[n];
+	if((Sv==0)&&(A==1))
+		return "1";
+	if((Sv==0)&&(A==-1))
+		return "-1";
 	for(int i=0;i<n;i++)
 	{
 		pw[i]=0;
@@ -179,6 +183,8 @@ public:
 				cstr.erase(n,str.length()-n);
 				if(cstr=="-")
 					return -1;
+				if(cstr=="+")
+					return 1;
 				n=atoi(cstr.c_str());
 				return n;
 			}
@@ -198,12 +204,12 @@ public:
 		int *mas = new int [k];
 		for (int i = 0;i<k;i++)
 		{
+			mas[i]=0;
+		}
+		for (int i = 0;i<k;i++)
+		{
 			int l = copy.find("x" + to_string(i + 1));
-			if (l == -1)
-			{
-				mas[i] = 0;
-			}
-			else
+			if (l != -1)
 			{
 				l = copy.find("x" + to_string(i + 1)+"^");
 				if (l == -1)
@@ -229,6 +235,8 @@ public:
 		int Sv = 0;
 		for (int i = k-1;i>=0;i--)
 		{
+			if(mas[i]>=maxst)
+				return -1;
 			Sv = Sv*maxst + mas[i];
 		}
 		return Sv;

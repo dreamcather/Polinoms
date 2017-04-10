@@ -45,7 +45,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <AdditionalIncludeDirectories>D:\Программирование\2 курс\Полином\PolinomLibrary;D:\Программирование\2 курс\Полином\SpisokLibrary;D:\Программирование\2 курс\Полином\PolinomsLibrary;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Polinom\PolinomLibrary;D:\Polinom\SpisokLibrary;D:\Polinom\PolinomsLibrary;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>

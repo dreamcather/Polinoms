@@ -1,9 +1,9 @@
-﻿Построение начато 09.04.2017 22:26:09.
-     1>Проект "D:\Программирование\2 курс\Полином\SpisokLibrary\SpisokLibrary.vcxproj" в узле 2 (целевые объекты Build).
+﻿Build started 10.04.2017 13:51:54.
+     1>Project "D:\Polinom\SpisokLibrary\SpisokLibrary.vcxproj" on node 3 (Build target(s)).
      1>Lib:
-         SpisokLibrary.vcxproj -> D:\Программирование\2 курс\Полином\Debug\SpisokLibrary.lib
-     1>Построение проекта "D:\Программирование\2 курс\Полином\SpisokLibrary\SpisokLibrary.vcxproj" завершено (целевые объекты Build).
+         SpisokLibrary.vcxproj -> D:\Polinom\Debug\SpisokLibrary.lib
+     1>Done Building Project "D:\Polinom\SpisokLibrary\SpisokLibrary.vcxproj" (Build target(s)).
 
-Построение успешно завершено.
+Build succeeded.
 
-Затраченное время: 00:00:00.07
+Time Elapsed 00:00:00

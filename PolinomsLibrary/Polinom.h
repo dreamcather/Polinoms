@@ -170,9 +170,10 @@ public:
 	}
 	CSpisok StrToPol(string str,int maxst_,int n_)
 	{
-		string *mas = new string[str.length() / 4 + 1];
+		string *mas = new string[str.length()- 1];
 		CSpisok tmp;
 		int k = 0;
+		str="+"+str;
 		if (str.length() == 0)
 			return tmp;
 		else

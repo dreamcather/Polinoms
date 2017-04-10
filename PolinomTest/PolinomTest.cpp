@@ -139,7 +139,7 @@ namespace PolinomTest
 			bool flag =false;
 			if(str==scopy)
 				flag=true;
-			Assert::IsTrue(flag);
+			Assert::AreEqual(str,scopy);
 		}
 		TEST_METHOD(TestZvenoStringToZveno4)
 		{
